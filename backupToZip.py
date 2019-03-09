@@ -15,3 +15,13 @@ def backupToZip(folder):
         if not os.path.exists(zipFilename):
             break
         num = num + 1
+
+    #Create the ZIP file.
+    print('Creating %s...' % (zipFilename))
+    backupZip = zipfile.ZipFile(zipFilename, 'w')
+
+    # TODO: Walk the entire folder tree and compress the files in each folder.
+    print('Done.')
+
+
+backupToZip('C:\\delicious')
