@@ -34,5 +34,5 @@ def backupToZip(folder):
     backupZip.close()
     print('Done.')
 
-
+#test
 backupToZip('C:\\delicious')
